@@ -2,5 +2,7 @@
   <Configurations>
     <Platform Name="x64" />
   </Configurations>
+  <Project Path="BinarySearch/BinarySearch.vcxproj" />
+  <Project Path="BruteForce/BruteForce.vcxproj" />
   <Project Path="Recursive/Recursive.vcxproj" />
 </Solution>
