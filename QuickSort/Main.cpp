@@ -148,6 +148,16 @@ float GetElapsedTime(int64_t start, int64_t end)
 	return static_cast<float>(end - start) / static_cast<float>(frequency.QuadPart);
 }
 
+int CompareTwoInts(const void* a, const void* b)
+{
+	int arg1 = *(const int*)a;
+	int arg2 = *(const int*)b;
+
+	if (arg1 < arg2) return -1;
+	if (arg1 > arg2) return 1;
+	return 0;
+}
+
 
 int main()
 {
@@ -173,14 +183,26 @@ int main()
 	// 메모리 복사 -> 빠름.
 	memcpy(array, original, length * sizeof(int));
 
+	// 라이브러리 qsort 함수 사용.
+	int64_t start = GetTime();
+	qsort(array, length, sizeof(int), CompareTwoInts);
+	int64_t end = GetTime();
+
+	// 시간 출력.
+	std::cout << "qsort elased Time: " << GetElapsedTime(start, end) << "\n";
+
+
 	// 출력.
 	//std::cout << "정렬 전 배열: ";
 	//PrintArray(array, length);
+	 
+	// 메모리 복사 -> 빠름.
+	memcpy(array, original, length * sizeof(int));
 
 	//버블 정렬.
-	int64_t start = GetTime();
+	start = GetTime();
 	BubbleSort(array, length);
-	int64_t end = GetTime();
+	end = GetTime();
 
 	std::cout << "BubbleSort elapsed Time: " << GetElapsedTime(start, end) << "\n";
 
@@ -192,6 +214,9 @@ int main()
 	std::cout << "BubbleSort elapsed Time: " << GetElapsedTime(start, end) << "\n";
 
 
+
+	// 메모리 복사 -> 빠름.
+	memcpy(array, original, length * sizeof(int));
 	start = GetTime();
 	// 정렬.
 	QuickSort(array, 0, length-1, LessEqual);
