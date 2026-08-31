@@ -5,6 +5,7 @@
   <Project Path="BinarySearch/BinarySearch.vcxproj" Id="c1ac0ff6-6e25-4663-93b2-cfe40c1528cc" />
   <Project Path="BruteForce/BruteForce.vcxproj" Id="65e756ff-838d-4bec-8e2c-345d8ce3f8d1" />
   <Project Path="BubbleSort/BubbleSort.vcxproj" Id="4ad0f7cd-e964-4441-888e-453c623476d1" />
+  <Project Path="HeapSort/HeapSort.vcxproj" Id="be6a6c22-d418-4c37-863a-e0a3e2133325" />
   <Project Path="InsertionSort/InsertionSort.vcxproj" Id="f929fc0a-b655-46f9-995b-4de4b0ac6d58" />
   <Project Path="MergeSort/MergeSort.vcxproj" Id="960b3a3d-054a-4fb7-87ef-02148b9331b3" />
   <Project Path="QuickSort/QuickSort.vcxproj" Id="d8626658-4c91-48cb-b5a8-bda5169f8172" />
