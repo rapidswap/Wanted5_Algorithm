@@ -2,6 +2,7 @@
   <Configurations>
     <Platform Name="x64" />
   </Configurations>
+  <Project Path="AStar/AStar.vcxproj" Id="f91c27e9-5837-4821-a102-48d021b05382" />
   <Project Path="BinarySearch/BinarySearch.vcxproj" Id="c1ac0ff6-6e25-4663-93b2-cfe40c1528cc" />
   <Project Path="BruteForce/BruteForce.vcxproj" Id="65e756ff-838d-4bec-8e2c-345d8ce3f8d1" />
   <Project Path="BubbleSort/BubbleSort.vcxproj" Id="4ad0f7cd-e964-4441-888e-453c623476d1" />
