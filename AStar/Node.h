@@ -4,7 +4,8 @@
 class Position
 {
 public:
-	Position(int x, int y)
+
+	Position(int x = 0, int y = 0)
 		:x(x), y(y)
 	{
 
@@ -18,6 +19,7 @@ public:
 
 public:
 	// 가로 세로 위치.
+	// Soft Renderer
 	int x = 0;
 	int y = 0;
 

@@ -15,6 +15,20 @@ private:
 		int y = 0;
 		float cost=0.0f;
 	};
+	
+	// 그리드 타일의 종류(열거형).
+	// char 타입 -> 문자 타입 -> 숫자임.
+	// 문자 타입으로 활용/1byte 크기를 할당하고 싶을 때 활용.
+	// uint8_t -> char
+	enum class TileType : char
+	{
+		Ground	= 0,
+		Wall	= 1,
+		Start	= 2,
+		Goal	= 3,
+		Visited	= 5,
+	};
+	
 
 public:
 	AStar();
@@ -29,7 +43,7 @@ public:
 	void DisplayGridWithPath(std::vector<std::vector<int>>& grid, const std::vector <Position>& path);
 
 private:
-	// 메소드.
+	// 메소드(클래스 또는 구조체가 가지는 함수)/공개되지 않은 함수.
 
 	// 이전 탐색에 사용한 정보 및 노드를 정리하는 함수.
 	void Clear();
@@ -61,7 +75,7 @@ private:
 
 	// 이전 탐색 표시를 지우고 그리드를 출력하는 함수.
 	void ClearVisualization(std::vector<std::vector<int>>& grid) const;
-	void DisplayeGrid(std::vector<std::vector<int>>& grid) const;
+	void DisplayGrid(std::vector<std::vector<int>>& grid) const;
 
 private:
 	// 동적 할당된 모든 노드를 소유하는 목록.
