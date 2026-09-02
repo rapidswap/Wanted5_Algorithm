@@ -9,6 +9,7 @@
   <Project Path="HeapSort/HeapSort.vcxproj" Id="be6a6c22-d418-4c37-863a-e0a3e2133325" />
   <Project Path="InsertionSort/InsertionSort.vcxproj" Id="f929fc0a-b655-46f9-995b-4de4b0ac6d58" />
   <Project Path="MergeSort/MergeSort.vcxproj" Id="960b3a3d-054a-4fb7-87ef-02148b9331b3" />
+  <Project Path="QuadTree/QuadTree.vcxproj" Id="aefb417c-c691-4e2d-ace7-649f4b3f4835" />
   <Project Path="QuickSort/QuickSort.vcxproj" Id="d8626658-4c91-48cb-b5a8-bda5169f8172" />
   <Project Path="Random/Random.vcxproj" Id="0a4eb0ec-2c42-4711-b8c5-944cf9b525b1" />
   <Project Path="Recursive/Recursive.vcxproj" Id="9fab93be-2129-441f-bc82-3a7f05330dde" />

@@ -200,7 +200,7 @@ void AStar::DisplayGridWithPath(std::vector<std::vector<int>>& grid, const std::
     // 이동 경로 그리기.
     for (const Position& position : path)
     {
-        // 경올 위치의 타일 값 읽기.
+        // 경로 위치의 타일 값 읽기.
         int value = grid[position.y][position.x];
         if (value == static_cast<int>(TileType::Start) || value == static_cast<int>(TileType::Goal))
         {
